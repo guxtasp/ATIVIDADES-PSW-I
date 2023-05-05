@@ -108,6 +108,7 @@
     echo '<pre>';
     print_r($arrayAluno['aluno'][1]); // para abrir array dentro de array, o colchete deve estar sepado e nao dentro como: ['aluno'[1]]
     echo '</pre>';
+    
     ?>
 
 </body>
