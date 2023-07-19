@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="cadastro-usuario">
+    <div class="identificacao-section">
+      <img src="assets/logotipo_logo.png" alt="">
+      <h1 class="title-section">Cadastro de Aluno</h1>
+    </div>
+    <hr>
+    <form method="GET" action="crudaluno.php" class="form-cadastro">
+
+      <div class="dados-usuario">
+        <div class="preenchimento-dados">
+          <label for="nomeAluno">Nome:</label>
+          <input type="text" name="nomeAluno">
+        </div>
+
+        <div class="preenchimento-dados">
+          <label for="telefoneAluno">Telefone:</label>
+          <input type="text" name="telefoneAluno">
+        </div>
+
+        <div class="preenchimento-dados">
+          <label for="enderecoAluno">Endereço:</label>
+          <input type="text" name="enderecoAluno">
+        </div>
+
+        <div class="preenchimento-dados">
+          <label for="emailAluno">E-mail:</label>
+          <input type="mail" name="emailAluno" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|com\.br)" required>
+        </div>
+
+        <div class="preenchimento-dados">
+          <label for="senhaAluno">Senha:</label>
+          <input type="password" name="senhaAluno">
+        </div>
+        <div class="preenchimento-dados">
+          <label for="matriculaAluno">Matricula:</label>
+          <input type="text" name="matriculaAluno">
+        </div>
+      </div>
+
+      <div class="preenchimento-dados">
+        <label for="dtaNascimentoAluno">Data de Nascimento:</label>
+        <input type="date" name="dtaNascimentoAluno">
+      </div>
+    </div>
+
+      <div class="btns-funcionais">
+        <input type="submit" name="cadastrar" value="Cadastrar" id="cadastrar">
+        <button class="button"><a href="acesso-aluno.html">Voltar</a></button>
+      </div>
+    </form>
+
+  </section>
+
+
+
+</body>
+
+</html>

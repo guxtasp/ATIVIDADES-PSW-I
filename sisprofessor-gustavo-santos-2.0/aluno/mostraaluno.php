@@ -1,4 +1,4 @@
-  g                                                                             ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''<!DOCT''''''''''''''''''''YPE html>
+c:\xampp\htdocs\gustavo\PSWMEDIO\2022.2\repositorio_psw1\ATIVIDADES-PSW-I\sisprofessor-gustavo-santos-2.0\database\listaprofessor.php  g                                                                             ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''<!DOCT''''''''''''''''''''YPE html>
 <html lang="en">
 
 <head>

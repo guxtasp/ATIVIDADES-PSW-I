@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="fundo">
-    <div class="background-btns">
-    <button class="button"><a href="cadprofessor.php">Cadastrar</a></button>
-    <button class="button"><a href="listaprofessor.php">Listar aluno</a></button>
-</div>
-</div>
+    <section class="direcionador-paginas">
+        <div class="identificacao-section">
+            <img src="assets/logotipo_logo.png" alt="">
+        <h1 class="title-section">Acesso ao Sistema</h1>
+        </div>
+        <hr>
+        <div class="btns-direcionamento">
+        <button class="btn-direcionamento"><a href="aluno/acesso-aluno.html">Aluno</a></button>
+        <button class="btn-direcionamento"><a href="professor/acesso-professor.html">Professor</a></button>
+    </div>
+    </section>
 </body>
 </html>

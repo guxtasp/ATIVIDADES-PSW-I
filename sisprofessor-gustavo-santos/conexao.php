@@ -3,7 +3,7 @@
 define('SERVER', 'localhost');
 define('USUARIO', 'root');
 define('SENHA', 'Gustavo1@');
-define('DBNAME', 'CAD_PROFESSOR');
+define('DBNAME', 'SIS_ALUNO');
 
 //Criar a conexão com banco de dados usando o PDO e a porta do banco de dados
 //Utilizar o Try/Catch para verificar a conexão.
@@ -15,6 +15,3 @@ try {
     echo "Erro: Conexão com banco de dados não foi realizada com sucesso.
      Erro gerado " . $e->getMessage();
 }
-
-
-?>
