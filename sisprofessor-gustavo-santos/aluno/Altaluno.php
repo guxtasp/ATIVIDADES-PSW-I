@@ -34,7 +34,7 @@
    $telefoneAluno = $array_retorno['telefoneAluno'];
    $enderecoAluno = $array_retorno['enderecoAluno'];
    $statusAluno = $array_retorno['statusAluno'];
-   $MatriculaAluno = $array_retorno['MatriculaAluno'];
+   $matriculaAluno = $array_retorno['matriculaAluno'];
    $emailAluno = $array_retorno['emailAluno'];
    $senhaAluno = $array_retorno['senhaAluno'];
    $dtaNascimentoAluno = $array_retorno['dtaNascimentoAluno'];
@@ -53,11 +53,11 @@
     <label for="enderecoAluno">Endereço:</label>
     <input type="text" name="enderecoAluno" id="enderecoAluno" value="<?php echo htmlspecialchars($enderecoAluno); ?>"><br>
 
-    <label for="statusAluno">Status (1 - AT, 2 - INAT):</label>
+    <label for="statusAluno">Status (MT - MATRICULADO, MI - MATRICULA INATIVA):</label>
     <input type="text" name="statusAluno" id="statusAluno" value="<?php echo htmlspecialchars($statusAluno); ?>"><br>
 
     <label for="MatriculaAluno">Matricula:</label>
-    <input type="text" name="MatriculaAluno" id="MatriculaAluno" value="<?php echo htmlspecialchars($MatriculaAluno); ?>"><br>
+    <input type="text" name="matriculaAluno" id="matriculaAluno" value="<?php echo htmlspecialchars($matriculaAluno); ?>"><br>
 
     <label for="emailAluno">Email:</label>
     <input type="email" name="emailAluno" id="emailAluno" value="<?php echo htmlspecialchars($emailAluno); ?>"><br>

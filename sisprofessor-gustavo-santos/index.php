@@ -17,6 +17,7 @@
         <div class="btns-direcionamento">
         <button class="btn-direcionamento"><a href="aluno/acesso-aluno.html">Aluno</a></button>
         <button class="btn-direcionamento"><a href="professor/acesso-professor.html">Professor</a></button>
+        <button class="btn-direcionamento"><a href="disciplina/acesso-disciplina.html">Disciplina</a></button>
     </div>
     </section>
 </body>

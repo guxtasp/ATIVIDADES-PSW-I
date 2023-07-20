@@ -19,7 +19,7 @@ $retorno->execute();
 
 function imprimirStatus($valor) {
     // Verifica se o valor é igual a 1 ou true
-    if ($valor === 1 || $valor === true) {
+    if ($valor === 'MT') {
     return "ATIVO";
     } else {
     return "INATIVO";
@@ -30,7 +30,7 @@ function imprimirStatus($valor) {
     <section class="direcionador-paginas" id="lista-usuario">
         <div class="identificacao-section">
             <img src="assets/logotipo_logo.png" alt="">
-            <h1 class="title-section">Lista de Docentes</h1>
+            <h1 class="title-section">Lista de Dicentes</h1>
         </div>
         <hr>
         <table>
@@ -63,16 +63,16 @@ function imprimirStatus($valor) {
 
                 <td>
                     <form method="POST" action="Altaluno.php">
-                        <input name="idAluno" id="Aluno" class="btn-alterar" type="hidden" value="<?php echo $value['idAluno']; ?>" />
-                        <button name="alterar" type="submit">Alterar</button>
+                        <input name="idAluno" id="Aluno"  type="hidden" value="<?php echo $value['idAluno']; ?>" />
+                        <button name="alterar" type="submit" class="btn-crud">Alterar</button>
                     </form>
 
                 </td>
 
                 <td>
                     <form method="GET" action="crudaluno.php">
-                        <input name="idAluno" type="hidden" id="Aluno2" value="<?php echo $value['idAluno']; ?>" />
-                        <button name="excluir" type="submit">Excluir</button>
+                        <input name="idAluno" type="hidden" id="Aluno2"  value="<?php echo $value['idAluno']; ?>" />
+                        <button name="excluir" type="submit" class="btn-crud delete">Excluir</button>
                     </form>
                     
                 </td>

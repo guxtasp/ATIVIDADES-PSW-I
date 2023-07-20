@@ -14,7 +14,7 @@ if(isset($_GET['cadastrar'])){
 
         ##codigo SQL
         $sql = "INSERT INTO Aluno(nomeAluno,telefoneAluno, enderecoAluno, emailAluno, dtaNascimentoAluno, statusAluno, senhaAluno,matriculaAluno) 
-                VALUES('$nomeAluno','$telefoneAluno','$enderecoAluno', '$emailAluno','$dtaNascimentoAluno',true,'$senhaAluno', '$matriculaAluno')";
+                VALUES('$nomeAluno','$telefoneAluno','$enderecoAluno', '$emailAluno','$dtaNascimentoAluno','MT','$senhaAluno', '$matriculaAluno')";
 
         ##junta o codigo sql a conexao do banco
         $sqlcombanco = $conexao->prepare($sql);

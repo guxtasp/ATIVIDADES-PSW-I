@@ -63,8 +63,8 @@ function imprimirStatus($valor) {
 
                 <td>
                     <form method="POST" action="AltProfessor.php">
-                        <input name="idProfessor" id="professor" class="btn-alterar" type="hidden" value="<?php echo $value['idProfessor']; ?>" />
-                        <button name="alterar" type="submit">Alterar</button>
+                        <input name="idProfessor" id="professor"  type="hidden" value="<?php echo $value['idProfessor']; ?>" />
+                        <button name="alterar" type="submit" class="btn-crud">Alterar</button>
                     </form>
 
                 </td>
@@ -72,7 +72,7 @@ function imprimirStatus($valor) {
                 <td>
                     <form method="GET" action="crudProfessor.php">
                         <input name="idProfessor" type="hidden" id="professor2" value="<?php echo $value['idProfessor']; ?>" />
-                        <button name="excluir" type="submit">Excluir</button>
+                        <button name="excluir" type="submit" class="btn-crud delete">Excluir</button>
                     </form>
                     
                 </td>

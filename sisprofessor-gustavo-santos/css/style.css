@@ -13,8 +13,30 @@ body{
     width: 100vw;
     height: 100%;
     background-image: url(../assets/fndo-index.webp);
+    overflow-x: hidden;
 
 }
+
+.btn-primary > a{
+    color: white;
+}
+
+.btn-crud{
+    cursor: pointer;
+    border: 0.1px solid #ccc;
+    padding: 2px 5px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.delete{
+    color: white;
+    background-color: red;
+}
+
 
 .direcionador-paginas, .cadastro-usuario, .lista-usuario{
     margin: 50px 0px;
@@ -34,7 +56,9 @@ body{
 }
 #lista-usuario{
     width: 1200px;
-
+}
+.exclusiva-para-notas{
+    width: 1200px;
 }
 .identificacao-section{
     display: flex;
@@ -71,7 +95,11 @@ hr{
 }
 
 .exclusiva-acesso{
-    width: 600px;
+    width: 700px;
+}
+
+.disciplina {
+    width: 800px;
 }
 
 .exclusiva{
@@ -108,7 +136,7 @@ hr{
     font-size: 15px;
 }
 
-.preenchimento-dados > input{
+.preenchimento-dados > input, .preenchimento-dados > select{
     width: 200px;
     border-radius: 10px;
     border: 0.1px solid #ccc;
@@ -155,8 +183,18 @@ th{
 td{
     font-size: 14px;
     padding: 5px;
+    text-align: center;
+    
 }
 
 .btn-alterar{
     background-color: #ffc60a;
+}
+
+.btn-diario{
+    margin: 0;
+}
+
+.add{
+    background-color: cornflowerblue;
 }
