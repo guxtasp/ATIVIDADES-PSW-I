@@ -4,13 +4,13 @@ require_once('../conexao.php');
    ##cadastrar
 if(isset($_GET['cadastrar'])){
         ##dados recebidos pelo metodo GET
-        $nomeProfessor = $_GET["nomeProfessor"];
-        $telefoneProfessor = $_GET["telefoneProfessor"];
-        $enderecoProfessor = $_GET["enderecoProfessor"];
-        $emailProfessor = $_GET["emailProfessor"];
-        $senhaProfessor = $_GET["senhaProfessor"];
-        $acessoProfessor = $_GET["acessoProfessor"];
-        $dtaNascimentoProfessor = $_GET["dtaNascimentoProfessor"];
+        $nomeProfessor = $_POST["nomeProfessor"];
+        $telefoneProfessor = $_POST["telefoneProfessor"];
+        $enderecoProfessor = $_POST["enderecoProfessor"];
+        $emailProfessor = $_POST["emailProfessor"];
+        $senhaProfessor = $_POST["senhaProfessor"];
+        $acessoProfessor = $_POST["acessoProfessor"];
+        $dtaNascimentoProfessor = $_POST["dtaNascimentoProfessor"];
 
         ##codigo SQL
         $sql = "INSERT INTO Professor(nomeProfessor,telefoneProfessor, enderecoProfessor, emailProfessor, dtaNascimentoProfessor, statusProfessor, senhaProfessor, acessoProfessor) 

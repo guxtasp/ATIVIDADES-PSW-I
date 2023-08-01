@@ -30,7 +30,7 @@ function imprimirStatus($valor) {
     <section class="direcionador-paginas" id="lista-usuario">
         <div class="identificacao-section">
             <img src="assets/logotipo_logo.png" alt="">
-            <h1 class="title-section">Lista de Dicentes</h1>
+            <h1 class="title-section">Lista de Discentes</h1>
         </div>
         <hr>
         <table>

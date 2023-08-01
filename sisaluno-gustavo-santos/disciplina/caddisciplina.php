@@ -19,7 +19,7 @@
       <h1 class="title-section">Cadastro de Disciplina</h1>
     </div>
     <hr>
-    <form method="GET" action="cruddisciplina.php" class="form-cadastro">
+    <form method="GET" action="cruddisciplina.php" class="form-cadastro" onsubmit="return validarFormulario()">
 
       <div class="dados-usuario">
         <div class="preenchimento-dados">
@@ -35,7 +35,7 @@
 
 
         <div class="preenchimento-dados">
-          <label for="codProfessor">Endereço:</label>
+          <label for="codProfessor">Professor:</label>
           <select name="codProfessor" class="acesso-professores">
             <option> Selecione o Professor</option>
             <?php
@@ -60,11 +60,11 @@
 
             // Preenche as opções do select com os nomes dos professores
             if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    echo '<option value="' . $row["idProfessor"] . '">' . $row["nomeProfessor"] . '</option>';
-                }
+              while ($row = $result->fetch_assoc()) {
+                echo '<option value="' . $row["idProfessor"] . '">' . $row["nomeProfessor"] . '</option>';
+              }
             } else {
-                echo '<option value="">Nenhum Professor encontrado</option>';
+              echo '<option value="">Nenhum Professor encontrado</option>';
             }
 
             // Fecha a conexão com o banco de dados
@@ -80,6 +80,31 @@
     </form>
 
   </section>
+  <script>
+    function validarFormulario() {
+      const nomeDisciplina = document.querySelector('[name="nomeDisciplina"]').value;
+      const cargaHoraria = document.querySelector('[name="cargaHoraria"]').value;
+      const codProfessor = document.querySelector('[name="codProfessor"]').value;
+
+      if (nomeDisciplina.trim() === "") {
+        alert("O nome da disciplina é obrigatório.");
+        return false;
+      }
+
+      if (cargaHoraria <= 0) {
+        alert("A carga horária deve ser um valor numérico maior que zero.");
+        return false;
+      }
+
+      if (codProfessor === "" || codProfessor === "Selecione o Professor") {
+        alert("Selecione um professor válido.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+
 </body>
 
 </html>
